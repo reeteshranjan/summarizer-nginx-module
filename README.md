@@ -36,9 +36,8 @@ Description
     The summarizer service is designed to provide summarization of "local" files
     as of now. This version of the module supports this mode of summarization.
 
-    The module outputs the raw TCP response from searchd as follows:
-    [4 bytes] (network order) : length of summary (L)
-    [L bytes] : summary text
+    The module outputs the summary utf-8 text (all headers etc. are consumed by
+    the module).
 
 Compatibility
 
